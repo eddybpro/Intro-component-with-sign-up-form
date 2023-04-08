@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="first-container">
+      <h1 class="title">
+        Learn to code by watching others
+      </h1>
+      <p class="para">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+      </p>
+    </section>
+
+    <section class="second-container">
+      <div class="box">
+        <p>
+          Try it free 7 days <span>then $20/mo. thereafter</span>
+        </p>
+      </div>
+
+      <form method="post">
+        <label for="f-name">
+          <input type="text" name="f-name" id="f-name" placeholder="First Name" required>
+        <img src="images/icon-error.svg" alt="" class="error none">
+        <p class="para-error none">First Name can not be empty</p>
+        </label>
+        
+        <label for="l-name">
+          <input type="text" name="l-name" id="l-name" placeholder="Last Name" required>
+        <img src="images/icon-error.svg" alt="" class="error none">
+        <p class="para-error none">Last Name can not be empty</p>
+        </label>
+
+        <label for="email">
+          <input type="email" name="email" id="email" placeholder="Email Address" required>
+        <img src="images/icon-error.svg" alt="" class="error none">
+        <p class="para-error none">Looks like this is not an email</p>
+        </label>
+
+        <label for="password">
+          <input type="password" name="password" id="password" placeholder="Password" required>
+        <img src="images/icon-error.svg" alt="" class="error none">
+        <p class="para-error none">First Name can not be empty</p>
+        </label>
+
+        <button type="submit" class="btn">
+          claim <span>your free trial</span>
+        </button>
+        <p class="desc">
+          By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
+        </p>
+      </form>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/eddybpro">Eddybpro</a>.
+    </p>
+  </footer>
+
+  <!-- JS script -->
+  <script src="script.js"></script>
+</body>
+</html>

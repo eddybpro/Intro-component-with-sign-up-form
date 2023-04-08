@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-Blue: hsl(249, 10%, 26%);
+    --grayish-Blue: hsl(246, 25%, 77%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+main{
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    background: url('images/bg-intro-desktop.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--red);
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+main .first-container{
+    color: var(--white);
+    padding: 1.5rem;
+}
+
+main .first-container .title{
+    font-size: 1.5rem;
+    padding-bottom: .75rem;
+}
+
+main .first-container .para{
+    font-size: 1rem;
+}
+
+main .second-container{
+    padding: .5rem;
+}
+
+main .second-container .box{
+    background-color: var(--blue);
+    margin-bottom: .75rem;
+    padding: .25rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+main .box p{
+    color: var(--white);
+}
+
+main .box p span{
+    color: var(--grayish-Blue);
+}
+
+main .second-container form{
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+main form label{
+    position: relative;
+}
+
+main form input,
+main form .btn{
+    display: block;
+    margin: .75rem auto;
+    width: 90%;
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--dark-Blue);
+    font-size: 1.01rem;
+    outline: none;
+}
+
+main form .error{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: translate(11rem , -2.5rem);
+}
+
+main form .para-error{
+    color: var(--red);
+    font-size: .7rem;
+    float: right;
+    padding-right: 1rem;
+    margin-top: -.65rem;
+    margin-bottom: .75rem;
+}
+
+main form .none{
+    display: none;
+}
+
+main form .btn{
+    background-color: var(--green);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-color: var(--green);
+    cursor: pointer;
+}
+
+main form .btn span{
+    font-weight: 500;
+}
+
+main form .desc{
+    padding: .2rem .55rem;
+    font-size: .8rem;
+}
+
+main form .desc a{
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer{
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--green);
+}
+
+@media screen and (max-width:700px) {
+    main{
+        grid-template-columns: 1fr;
+        margin: .5rem;
+        background: url('images/bg-intro-mobile.png');
+        background-color: var(--red);
+        padding: .25rem;
+    }
+
+    main .first-container{
+        text-align: center;
+        padding: 1rem .25rem;
+    }
+
+    footer{
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
